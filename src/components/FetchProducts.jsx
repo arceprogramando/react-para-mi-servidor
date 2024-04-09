@@ -19,9 +19,9 @@ const FetchProducts = () => {
       {data &&
         data.map((product) => {
           return (
-            <div key={product.id}>
+            <div key={product.id} className="w-full text-center">
               <h3>{product.title ? product.title : 'El producto no existe'}</h3>
-              <div className="w-40">
+              <div className="w-auto flex justify-center">
                 <img src={product.thumbnail} alt={product.title} className="h-40 object-contain" />
               </div>
             </div>
